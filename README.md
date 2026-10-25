@@ -11,8 +11,9 @@
 [![Clean & Untouched](https://img.shields.io/badge/Security-100%25_Malware_Scanned-10B981.svg?style=flat-square)](https://shinegpl.com)
 [![WordPress](https://img.shields.io/badge/WordPress-6.x_Ready-21759B.svg?style=flat-square)](https://wordpress.org)
 [![Website](https://img.shields.io/badge/Official_Website-shinegpl.com-10B981.svg?style=flat-square)](https://shinegpl.com)
+[![Vercel Mirror](https://img.shields.io/badge/Vercel_Edge_Mirror-shinegpl.vercel.app-000000.svg?style=flat-square&logo=vercel)](https://shinegpl.vercel.app)
 
-**[Official Website](https://shinegpl.com)** &nbsp;•&nbsp; **[Browse Catalog](https://shinegpl.com/shop/)** &nbsp;•&nbsp; **[VIP Membership](https://shinegpl.com/pricing/)** &nbsp;•&nbsp; **[Request a Plugin](https://github.com/issues)**
+**[Official Website](https://shinegpl.com)** &nbsp;•&nbsp; **[Vercel Edge Mirror](https://shinegpl.vercel.app)** &nbsp;•&nbsp; **[Browse Catalog](https://shinegpl.com/shop/)** &nbsp;•&nbsp; **[VIP Membership](https://shinegpl.com/pricing/)** &nbsp;•&nbsp; **[Request a Plugin](https://github.com/issues)**
 
 ---
 
