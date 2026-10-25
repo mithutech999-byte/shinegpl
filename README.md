@@ -49,6 +49,27 @@ Whether you are a freelancer, web agency, or developer building staging prototyp
 
 ---
 
+## Popular Featured Themes & Plugins (Direct Catalog Links)
+
+Here are direct links to our most requested and frequently updated WordPress items:
+
+### Featured WordPress Themes
+- **[Astra Pro Theme & Agency Bundles](https://shinegpl.com/astra-pro/)** - Ultra-lightweight, customizable WordPress theme with complete Pro addons.
+- **[GeneratePress Premium (GP Premium)](https://shinegpl.com/generatepress-premium/)** - Fast, block-based performance modular theme.
+- **[Newspaper Theme by tagDiv](https://shinegpl.com/newspaper-theme/)** - The #1 selling news, magazine, and blog theme.
+- **[WoodMart Multipurpose WooCommerce Theme](https://shinegpl.com/woodmart-theme/)** - Premium super-fast eCommerce theme with AJAX filters.
+- **[Flatsome Responsive WooCommerce Theme](https://shinegpl.com/flatsome-theme/)** - Top-rated online store theme with built-in UX builder.
+- **[Avada Responsive Multi-Purpose Theme](https://shinegpl.com/avada-theme/)** - Versatile website builder with Fusion Core.
+- **[Divi Theme & Visual Builder](https://shinegpl.com/divi-theme-with-divi-theme-api-key/)** - Leading drag-and-drop website creation framework.
+
+### Featured WordPress Plugins
+- **[Elementor Pro Visual Page Builder](https://shinegpl.com/elementor-pro/)** - Leading drag-and-drop website editor with theme builder.
+- **[WP Rocket Speed Optimization](https://shinegpl.com/wp-rocket-plugin/)** - High-performance caching, CSS/JS delay, and Core Web Vitals booster.
+- **[Rank Math Pro SEO Plugin](https://shinegpl.com/rank-math-pro-plugin/)** - Comprehensive AI-enabled WordPress SEO suite with schema generator.
+- **[Gravity Forms Advanced Form Builder](https://shinegpl.com/gravity-form-plugin/)** - Powerful custom forms, multi-page flows, and calculations.
+
+---
+
 ## Legal & Compliance Notice
 
 All WordPress themes and plugins hosted and shared by ShineGPL are released under the terms of the **GNU General Public License (GPL)**. 
