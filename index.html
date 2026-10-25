@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ShineGPL — Premium Verified WordPress GPL Themes, Plugins & Addons</title>
+  <meta name="description" content="Download authentic, untouched WordPress GPL plugins, themes, and builder addon suites. 11,500+ items scanned for security with high-speed direct downloads.">
+  <link rel="icon" href="https://shinegpl.com/wp-content/uploads/2026/10/shine-gpl-favicon-300x300.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --shine-primary: #10B981;
+      --shine-primary-rgb: 16, 185, 129;
+      --shine-primary-5: rgba(16, 185, 129, 0.05);
+      --shine-primary-8: rgba(16, 185, 129, 0.08);
+      --shine-primary-10: rgba(16, 185, 129, 0.10);
+      --shine-primary-20: rgba(16, 185, 129, 0.20);
+      --shine-primary-30: rgba(16, 185, 129, 0.30);
+      --shine-primary-40: rgba(16, 185, 129, 0.40);
+      --shine-bg: #090D16;
+      --shine-surface: #0F172A;
+      --shine-surface-border: #1E293B;
+      --shine-text: #94A3B8;
+      --shine-heading: #F8FAFC;
+      --shine-white: #FFFFFF;
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--shine-bg);
+      color: var(--shine-text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Ambient Glow Background */
+    .ambient-glow {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateZ(0);
+      width: 100vw;
+      max-width: 1200px;
+      height: 550px;
+      background: radial-gradient(circle at 50% 10%, var(--shine-primary-20) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--shine-surface-border);
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px var(--shine-primary-30);
+    }
+
+    .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--shine-heading);
+      letter-spacing: -0.5px;
+    }
+
+    .brand-highlight {
+      color: var(--shine-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--shine-text);
+      transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-link:hover {
+      color: var(--shine-heading);
+    }
+
+    .btn-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--shine-primary);
+      color: #041F16;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px var(--shine-primary-40);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateZ(0);
+    }
+
+    .btn-main:hover {
+      background: #059669;
+      transform: translateY(-1px) translateZ(0);
+      box-shadow: 0 6px 20px var(--shine-primary-40);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--shine-primary-10);
+      border: 1px solid var(--shine-primary-30);
+      border-radius: 999px;
+      color: var(--shine-primary);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--shine-heading);
+      letter-spacing: -1.2px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-desc {
+      font-size: 18px;
+      color: var(--shine-text);
+      max-width: 680px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+
+    .search-box-wrap {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 20px 16px 50px;
+      background: var(--shine-surface);
+      border: 1px solid var(--shine-surface-border);
+      border-radius: 14px;
+      color: var(--shine-heading);
+      font-size: 16px;
+      outline: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .search-input:focus {
+      border-color: var(--shine-primary);
+      box-shadow: 0 0 0 3px var(--shine-primary-20);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--shine-text);
+      pointer-events: none;
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding: 30px;
+      background: var(--shine-surface);
+      border: 1px solid var(--shine-surface-border);
+      border-radius: 16px;
+      margin-bottom: 70px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--shine-heading);
+      letter-spacing: -0.5px;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--shine-text);
+    }
+
+    /* Products Section */
+    .section-head {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--shine-heading);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 70px;
+    }
+
+    .product-card {
+      background: var(--shine-surface);
+      border: 1px solid var(--shine-surface-border);
+      border-radius: 14px;
+      padding: 22px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-card:hover {
+      border-color: var(--shine-primary-30);
+      transform: translateY(-3px) translateZ(0);
+      box-shadow: 0 12px 30px var(--shine-primary-10);
+    }
+
+    .product-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--shine-primary);
+      margin-bottom: 8px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--shine-heading);
+      margin-bottom: 10px;
+    }
+
+    .product-desc {
+      font-size: 13px;
+      color: var(--shine-text);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 14px;
+    }
+
+    .btn-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--shine-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: gap 0.2s;
+    }
+
+    .product-card:hover .btn-link {
+      gap: 8px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--shine-surface-border);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 14px;
+      color: var(--shine-text);
+    }
+
+    footer a {
+      color: var(--shine-primary);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 32px; }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+
+  <div class="container">
+    <header>
+      <a href="https://shinegpl.com/" class="logo-wrap" title="ShineGPL">
+        <img src="https://shinegpl.com/wp-content/uploads/2026/10/shine-gpl-favicon-300x300.png" alt="ShineGPL" class="logo-img">
+        <div class="brand-name">Shine<span class="brand-highlight">GPL</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="https://shinegpl.com/shop/" class="nav-link">Catalog</a>
+        <a href="https://shinegpl.com/pricing/" class="nav-link">VIP Plans</a>
+        <a href="https://github.com/mithutech999-byte/shinegpl" target="_blank" class="nav-link">GitHub</a>
+        <a href="https://shinegpl.com/" class="btn-main">Visit Website</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="badge-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          100% Verified Untouched GPL Software
+        </div>
+        <h1 class="hero-title">Verified WordPress GPL Themes, Plugins & Addon Suites</h1>
+        <p class="hero-desc">Over 11,500+ authentic premium WordPress items distributed strictly under the GNU General Public License (GPL-3.0) for staging, prototyping, and agency development.</p>
+
+        <div class="search-box-wrap">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" class="search-input" id="quickSearch" placeholder="Quick search themes, plugins (e.g. Elementor, WoodMart, Astra)...">
+        </div>
+      </section>
+
+      <section class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-num">11,500+</div>
+          <div class="stat-label">Active GPL Products</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">VirusTotal Audited</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">GPL v3</div>
+          <div class="stat-label">Open Source Licensed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Cloud CDN</div>
+          <div class="stat-label">High-Speed Downloads</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2 class="section-title">Popular Top Themes & Plugins</h2>
+          <p>Instant access to our most requested, authentic WordPress resources</p>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <div class="product-card">
+            <div>
+              <div class="product-tag">Page Builder</div>
+              <div class="product-name">Elementor Pro</div>
+              <div class="product-desc">Leading drag-and-drop website editor with visual theme builder and dynamic content widgets.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v4.3.2</span>
+              <a href="https://shinegpl.com/elementor-pro/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">Performance Theme</div>
+              <div class="product-name">GeneratePress Premium</div>
+              <div class="product-desc">Fast, modular, lightweight block-based theme built for speed, accessibility, and Core Web Vitals.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">GP Premium</span>
+              <a href="https://shinegpl.com/generatepress-premium/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">Agency Theme</div>
+              <div class="product-name">Astra Pro</div>
+              <div class="product-desc">Popular multipurpose theme with agency starter templates and custom layouts.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v4.13.11</span>
+              <a href="https://shinegpl.com/astra-pro/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">WooCommerce Theme</div>
+              <div class="product-name">WoodMart Theme</div>
+              <div class="product-desc">All-in-one eCommerce powerhouse with AJAX shop filters, variations, and mega menus.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v8.6.5</span>
+              <a href="https://shinegpl.com/woodmart-theme/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">Publishing Theme</div>
+              <div class="product-name">Newspaper Theme</div>
+              <div class="product-desc">The top-selling news, magazine, and rich content blog theme by tagDiv with tagDiv Composer.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v12.7.9</span>
+              <a href="https://shinegpl.com/newspaper-theme/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">Speed & Cache</div>
+              <div class="product-name">WP Rocket</div>
+              <div class="product-desc">Premier WordPress speed optimization plugin with lazy-loading, CSS delay, and database cleanup.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v3.23.5</span>
+              <a href="https://shinegpl.com/wp-rocket-plugin/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">SEO Plugin</div>
+              <div class="product-name">Rank Math Pro</div>
+              <div class="product-desc">AI-powered SEO suite with schema generator, keyword ranking tracker, and instant indexing API.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v3.0.124</span>
+              <a href="https://shinegpl.com/rank-math-pro-plugin/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div>
+              <div class="product-tag">Advanced Forms</div>
+              <div class="product-name">Gravity Forms</div>
+              <div class="product-desc">Professional form builder with conditional logic, multi-page surveys, and 50+ official addons.</div>
+            </div>
+            <div class="product-footer">
+              <span style="font-size:12px; color:#10B981;">v3.2.0</span>
+              <a href="https://shinegpl.com/gravity-form-plugin/" class="btn-link">Download &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 <a href="https://shinegpl.com/">ShineGPL</a>. All WordPress items are distributed strictly under GNU General Public License.</p>
+      <p style="margin-top: 8px; font-size: 12px;">This mirror page is hosted on Vercel Global Edge Network. Official repository: <a href="https://github.com/mithutech999-byte/shinegpl" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('quickSearch');
+    const cards = document.querySelectorAll('.product-card');
+
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
